@@ -1,5 +1,6 @@
 import dryscrape
 import sys
+import time
 
 if 'linux' in sys.platform:
     # start xvfb in case no X is running. Make sure xvfb 
@@ -12,6 +13,7 @@ search_term = 'dryscrape'
 #sess = dryscrape.Session(base_url = 'http://google.com')
 sess = dryscrape.Session(base_url = 'http://app1.susalud.gob.pe/registro/')
 sess.set_proxy(host='190.117.188.223', port = 3128)
+time.sleep(10)
 #190.117.188.223:3128
 # we don't need images
 #sess.set_attribute('auto_load_images', False)
