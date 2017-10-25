@@ -11,7 +11,7 @@ search_term = 'dryscrape'
 
 # set up a web scraping session
 #sess = dryscrape.Session(base_url = 'http://google.com')
-sess = dryscrape.Session(base_url = 'http://app1.susalud.gob.pe/registro/')
+sess = dryscrape.Session(base_url = 'http://app1.susalud.gob.pe/registro')
 sess.set_proxy(host='190.117.188.223', port = 3128)
 sess.visit('/')
 time.sleep(10)
