@@ -19,7 +19,7 @@ time.sleep(10)
 #sess.set_attribute('auto_load_images', False)
 
 # visit homepage and search for a term
-#sess.visit('/')
+sess.visit('/')
 #q = sess.at_xpath('//*[@name="q"]')
 #q.set(search_term)
 #q.form().submit()
