@@ -10,16 +10,17 @@ if 'linux' in sys.platform:
 search_term = 'dryscrape'
 
 # set up a web scraping session
-sess = dryscrape.Session(base_url = 'http://google.com')
-#sess = dryscrape.Session(base_url = 'http://app1.susalud.gob.pe/registro/')
-#sess.set_proxy(host='190.117.188.223', port = 3128)
+#sess = dryscrape.Session(base_url = 'http://google.com')
+sess = dryscrape.Session(base_url = 'http://app1.susalud.gob.pe/registro/')
+sess.set_proxy(host='190.117.188.223', port = 3128)
+sess.visit('/')
 time.sleep(10)
 #190.117.188.223:3128
 # we don't need images
 #sess.set_attribute('auto_load_images', False)
 
 # visit homepage and search for a term
-sess.visit('/')
+#sess.visit('/')
 #q = sess.at_xpath('//*[@name="q"]')
 #q.set(search_term)
 #q.form().submit()
