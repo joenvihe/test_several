@@ -30,5 +30,5 @@ time.sleep(10)
 #  print(link['href'])
 
 # save a screenshot of the web page
-sess.render('google.png')
+sess.render('google2.png')
 print("Screenshot written to 'google.png'")
